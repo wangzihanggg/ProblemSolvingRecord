@@ -13,3 +13,42 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
+
+
+## Anaconda创建新环境activate时报错
+
+```
+#错误信息
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+```
+
+**解决方法**
+
+如使用 zsh，则
+
+```
+conda init zsh
+```
+
+如果使用 bash，则
+
+```
+conda init bash
+```
+
