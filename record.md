@@ -52,3 +52,22 @@ conda init zsh
 conda init bash
 ```
 
+
+
+
+
+## Ubuntu20.04 ROS1与ROS2共存方法
+
+bashrc添加
+
+```shell
+#source /opt/ros/noetic/setup.bash
+echo "ros noetic(1) or ros2 foxy(2)?"
+read edition
+if [ "$edition" -eq "1" ];then
+  source /opt/ros/noetic/setup.bash
+else
+  source /opt/ros/foxy/setup.bash
+fi
+```
+
